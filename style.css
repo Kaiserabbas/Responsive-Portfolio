@@ -411,7 +411,7 @@ button[disabled] {
 }
 
 .headline-skill-container {
-  padding: 5em 7% 0 7%;
+  padding: 5em 15% 0 7%;
 }
 
 .about-heading-small {
@@ -472,7 +472,7 @@ button[disabled] {
   background-color: #f7f7f9;
   border-radius: 0.5em;
   margin: 0.5em 0;
-  padding: 0.5em;
+  padding: 0.5em 2em;
 }
 
 .about-skill-text {
@@ -667,13 +667,12 @@ textarea:focus {
   }
 
   .headline-skill-container {
-    display: flex;
-    flex-direction: row;
-    height: 590px;
+    display: grid;
+    grid-template-columns: 40% 60%;
   }
 
   .about-headline {
-    width: 107%;
+    width: 100%;
   }
 
   .heading-large {
@@ -682,7 +681,7 @@ textarea:focus {
 
   .about .headline-paragraph {
     margin-left: 0;
-    width: 447px;
+    width: 100%;
   }
 
   .about .headline-sm-suport {
@@ -729,9 +728,9 @@ textarea:focus {
   }
 
   .social {
-    position: absolute;
-    left: 42px;
-    margin-top: 190px;
+    position: relative;
+    left: -10%;
+    margin-top: 1em;
   }
 
   .contact-me-form-container {
