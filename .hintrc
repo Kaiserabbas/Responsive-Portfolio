@@ -5,6 +5,9 @@
       "pattern": ["**", "!.git/**", "!node_modules/**"]
     }
   },
+  "parserOptions": {
+  "sourceType": "module"
+},
   "extends": ["development"],
   "formatters": ["stylish"],
   "hints": [
