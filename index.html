@@ -11,7 +11,7 @@
   <body>
    
     <header>
-      <a href="./index.html"><img class="logo" src="./public/logo.png" alt=""> </a>
+      <a href="./index.html"><img class="logo" src="./public/logo.png" alt="logo"> </a>
       <nav>
         <div class="menu">
           <svg width="750px" height="750px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
@@ -256,21 +256,28 @@
       </p>
       <form  action="https://formspree.io/f/mdovrdrq"
       method="POST" class="contact-me-form">
+        <label for="name"></label>
         <input
           class="contact-me-form-text-input"
           required
           maxlength="30"
           name="name"
           type="text"
+          id="name"
           placeholder="Your good name">
+
+          <label for="email"></label>
           <input
           class="contact-me-form-text-input"
           pattern="[^ @]*@[^ @]*"
           required
           name="email"
           type="email"
+          id="email"
           placeholder="Your email address"
         />
+
+          <label for="textarea"></label>
           <textarea
           class="contact-me-form-text-input"
           required
@@ -279,6 +286,7 @@
           cols="30"
           rows="9"
           placeholder="Write your message here"
+          id="textarea"
         ></textarea>
          <button class="contact-me-form-button" type="submit">
           Get In Touch
