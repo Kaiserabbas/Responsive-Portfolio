@@ -129,7 +129,7 @@ header {
 
 @keyframes fadeIn {
   from {
-    color: #d2c122;
+    color: #930101;
     transform: translateX(-40px);
   }
 
@@ -140,7 +140,7 @@ header {
 }
 
 .main-h1:hover {
-  color: #ff6b6b;
+  color: #0aa51e;
 }
 
 .main-paragraph {
@@ -155,7 +155,7 @@ header {
 
 .main-h4 {
   margin: 10px 0;
-  color: #7f8cff;
+  color: #323fb3;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -347,7 +347,7 @@ i {
 
 .works-card-tags {
   display: flex;
-  color: #6070ff;
+  color: #323fb3;
   margin: 0.25em 0;
   list-style-type: none;
   border-radius: 8px;
@@ -494,7 +494,7 @@ button[disabled] {
   margin: 6em 0 0 0;
   padding: 3em;
   border-radius: 5em 0 0 0;
-  background-color: #6070ff;
+  background-color: #323fb3;
   background-image: url(./assets/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -530,8 +530,14 @@ button[disabled] {
 .contact-me-form > input:focus,
 textarea:focus {
   outline: none !important;
-  border: 1px solid #f7f7f9;
-  box-shadow: 0 0 2px #f7f7f9;
+  color: #fff;
+  background-color: #323fb3;
+  border: 1px solid #000;
+  box-shadow: 0 0 4px #b42501;
+}
+
+::placeholder {
+  color: #fff;
 }
 
 .contact-me-form-text-input {
