@@ -10,10 +10,48 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-ul {
-  list-style: none;
+body {
+  position: relative;
+  background-color: #f7f7f9;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.mobile-drop-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.mobile-drop-menu a {
+  text-decoration: none;
+}
+
+.mobile-drop-menu:hover .drop-content {
+  display: block;
+}
+
+.close {
+  left:95%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer
+}
+
+.close:hover {
+  color: red;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -21,13 +59,6 @@ ul {
   width: 40px;
   height: 40px;
   cursor: pointer;
-}
-
-body {
-  position: relative;
-  background-color: #f7f7f9;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .heading-large {
@@ -537,14 +568,14 @@ textarea:focus {
 }
 
 ::placeholder {
-  color: #fff;
+  color: #a8a6a6;
 }
 
 .contact-me-form-text-input {
   margin-top: 0.75em;
   padding: 0.75em;
   width: 100%;
-  border: 1px solid #cfd8dc;
+  border: 1px solid #dfe1e2;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -614,6 +645,7 @@ textarea:focus {
     cursor: pointer;
     color: #344563;
     font-size: 15px;
+    text-decoration: none;
   }
 
   .social-icons {

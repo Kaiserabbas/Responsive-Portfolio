@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
     <title>My Professional Portfolio</title>
   </head>
   <body>
     <header>
       <a href="./index.html"><img class="logo" src="./public/logo.png" alt="logo"> </a>
       <nav>
-        <div class="menu">
-          <svg width="750px" height="750px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <div class="menu" >
+          <svg onclick="dropdownToggle()" width="750px" height="750px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
             <path stroke="#6070FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22"/>
           </svg>
         </div>
+        <div id="drop-menu" class="mobile-drop-menu">
+          <div id="drop-content" class="drop-content">
+            <span class="close" onclick = "dropClose()" >&times;</span>
+            <a href="./index.html">Portfolio</a>
+            <a href="#about-me">About</a>
+            <a href="#contact-me">Contact</a>
+          </div>
+        </div>
         <ul class="desk-ul">
-          <li class="desk-li">Portfolio</li>
-          <li class="desk-li">About</li>
-          <li class="desk-li">Contact</li>
+          <a href="./index.html" class="desk-li">Portfolio</a>
+          <a href="#about-me" class="desk-li">About</a>
+          <a href="#contact-me" class="desk-li">Contact</a>
         </ul>
       </nav>
     </header>
@@ -156,7 +165,7 @@
               </ul>
             </section>
       
-    <section class="about">
+    <section class="about" id="about-me">
       <div class="headline-skill-container">
         <div class="about-headline">
           <h2 class="heading-large">About Myself</h2>
@@ -243,7 +252,7 @@
       </div>
     </section>
 
-    <section class="contact-me-form-container">
+    <section class="contact-me-form-container" id="contact-me">
         <h1 class="contact-me-form-heading">
             Contact me
         </h1>
@@ -294,5 +303,6 @@
 
       </form>    
   </section>
+  link
   </body>
 </html>
