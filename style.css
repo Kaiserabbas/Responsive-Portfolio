@@ -22,36 +22,43 @@ ul {
   text-decoration: none;
 }
 
-.mobile-drop-menu {
+.dropdown {
   position: relative;
   display: inline-block;
 }
 
-.drop-content {
+.dropdown-content {
   display: none;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 1%;
+  border-radius: 20px;
+  background-color: #6070ff;
+  padding: 10%;
   z-index: 1;
 }
-.mobile-drop-menu a {
+
+.dropdown-content a {
+  color: black;
+  padding: 0 10px 20px 20px;
   text-decoration: none;
+  display: block;
+  text-align: right;
 }
 
-.mobile-drop-menu:hover .drop-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
 .close {
-  left:95%;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer
+  margin-left: 70%;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .close:hover {
-  color: red;
+  color: rgb(0, 0, 0);
 }
+
 .menu {
   display: flex;
   align-items: center;
@@ -59,6 +66,11 @@ ul {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.menu a {
+  display: relative;
+  right: 80%;
 }
 
 .heading-large {
@@ -430,6 +442,22 @@ button:disabled,
 button[disabled] {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+.menu-button {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.menu-button:hover {
+  background: none;
+  box-shadow: 0 0 0 0;
+}
+
+.menu-button:active {
+  background: none;
+  transform: translateY(4px);
 }
 
 /* Works Section Styling Ends Here */
