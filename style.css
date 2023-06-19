@@ -69,7 +69,6 @@ ul {
 }
 
 .menu a {
-  display: relative;
   right: 80%;
 }
 
@@ -159,7 +158,7 @@ header {
 .main-h1 {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins'sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -188,7 +187,7 @@ header {
 
 .main-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins'sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -696,7 +695,7 @@ textarea:focus {
 
   .main-paragraph {
     margin: 10px 0;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
