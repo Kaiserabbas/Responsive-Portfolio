@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <a href="./index.html"><img class="logo" src="./public/logo.png" alt="logo"> </a>
+      <a href="./index.html"><img id="logo" class="logo" src="./public/logo.png" alt="logo"> </a>
       <nav>
         <div class="menu" >
           <button class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></button> 
@@ -32,7 +32,8 @@
       </nav>
     </header>
 
-    <section class="main-page">
+    <section id="main">
+    <section id="main-page" class="main-page blur">
       <section class="main-headline">
         <h1 class="main-h1">I'm Qaisar<br />Glad to see you!</h1>
         <p class="main-paragraph">
@@ -62,7 +63,7 @@
       </section>
     </section>
 
-    <section class="works">
+    <section class="works blur">
       <ul class="works-cards">
       
         <li class="works-card">
@@ -163,7 +164,7 @@
               </ul>
             </section>
       
-    <section class="about" id="about-me">
+    <section class="about blur" id="about-me">
       <div class="headline-skill-container">
         <div class="about-headline">
           <h2 class="heading-large">About Myself</h2>
@@ -250,7 +251,7 @@
       </div>
     </section>
 
-    <section class="contact-me-form-container" id="contact-me">
+    <section class="contact-me-form-container blur" id="contact-me">
         <h1 class="contact-me-form-heading">
             Contact me
         </h1>
@@ -299,6 +300,7 @@
           Get In Touch
         </button>
       </form>    
+  </section>
   </section>
   </body>
 </html>
