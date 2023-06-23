@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 function toggleDropdown() {
   const dropdown = document.getElementById('dropdownContent');
-  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  dropdown.style.display = dropdown.style.display === 'block' : 'none' : 'block';
   const bground = document.getElementById('main');
   bground.classList.add('blurr');
   const bgroundLogo = document.getElementById('logo');
